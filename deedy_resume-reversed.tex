@@ -1,0 +1,353 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.3 (22/9/2018)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% v1.3 author:
+% Zachary Taylor
+%
+% v1.3 repository:
+% https://github.com/ZDTaylor/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Add various styling and section options and allow for multiple pages smoothly.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.3:
+% 1. Removed MacFonts version as I have no desire to maintain it nor access to macOS
+% 2. Switched column ordering
+% 3. Changed font styles/colors for easier human readability
+% 4. Added, removed, and rearranged sections to reflect my own experience
+% 5. Hid last updated
+%
+% v1.2:
+% 1. Added publications in place of societies.
+% 2. Collapsed a portion of education.
+% 3. Fixed a bug with alignment of overflowing long last updated dates on the top right.
+%
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-reversed}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Himanshu Sharma}{ %\urlstyle{same}\href{http://example.com}{example.com}| \href{http://example2.co}{example2.co}\\
+\href{mailto:contact@himanshusharma.tech}{contact@himanshusharma.tech} |
+\href{https://himanshusharma.tech}{himanshusharma.tech} 
+% \href{tel:+919634549381}{+919634549381}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.60\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{PuStack}
+\descript{| Software Development Intern }
+\location{Sep 2020 – Dec 2020 | Work from home}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Wrote and reviewed code for cross-platform apps built on Flutter.
+\item Created cross-platform apps efficiently as per company requirement with Firebase as the backend.
+\item Created scripts to automate common tasks and increase productivity.
+\item Integrated Razorpay Payment Gateway. Utilized Cloud Functions to create web-hook end-points for the Razorpay events.
+\item Customised pre-built calendar package for the live sessions.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{The Healthy Company}
+\descript{| Flutter Development Intern }
+\location{Apr 2020 – Sep 2020 | Work from home}
+\begin{tightemize}
+\item Developed cross-platform app \textbf{\href{https://www.thehealthycompany.in/eva/}{EVA: AI Health Coach}} with Flutter. 
+\item Recommends a personalized diet, food diary and healthy recipes according to the user's preferred food and special medical conditions.
+\item Integrated Razorpay Payment Gateway in the app.
+\item Increase the app's engagement by using Dynamic Links, Cloud Messaging, Remote Config tools. 
+\item Provide the app analytics using the Debug View tool.
+\end{tightemize}
+\sectionsep
+
+% \runsubsection{Mississippi State University ITS}
+% \descript{| Assistant Support Specialist }
+% \location{Aug 2015 – Oct 2016 | Mississippi State, MS}
+% \begin{tightemize}
+% \item Interacted with clients to assess their problems and implement a solution in an efficient, friendly manner.
+% \item Prepared workstations and laptops for future use by company employees.
+% \item Created scripts to automate common tasks and increase productivity.
+% \end{tightemize}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{GitHub Wrapped}
+\descript{
+% | Project for Distributed Client-Server Programming
+}
+\location{Dec 2020 – Present}
+\begin{tightemize}
+\item \textbf{\href{https://githubwrapped.tech/}{githubwrapped.tech}}, a website to retrieve annual contributions of a developer.
+\item Utilizing the GitHub GraphQL API.
+\item 2k+ report share on Twitter with tag GitHubWrapped. 
+\item\textbf{\href{https://twitter.com/GitHubWrapped}{GitHubWrapped}} bot to retweet the tweets.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{AirPower}
+\descript{}
+\location{Dec 2020 – Present}
+\begin{tightemize}
+\item Project won Hacka-demic Hackathon.
+\item \textbf{\href{https://airpower.ishandeveloper.com/}{Airpower}} is a collection of complete end-to-end services. 
+\item Based on an IoT device. All-in-one energy management solution.
+\item Replacement for existing energy meters.
+\item Two platforms for our services: web based admin dashboard and flutter based app for consumers.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Community App Boilerplate}
+\descript{}
+\location{Mar 2020 – Present}
+\begin{tightemize}
+\item Project under GSSOC'20.
+\item \textbf{\href{https://github.com/smaranjitghose/girlscript_app}{Boilerplate App}} for any technical community.
+\item Easy to pick up and use without any hustle.
+\item Share member’s achievements and upcoming opportunities.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Blog App}
+\descript{}
+\location{Nov 2019 – Present 
+% | Mississippi State, MS
+}
+\begin{tightemize}
+\item \textbf{\href{http://www.chit-chat.net/}{Blog App}}, an anonymous blog creation application.
+\item Real-time blog creation without any communication and account creation.
+\item Utilizing a Firebase backend
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Research}
+% \runsubsection{Cornell Robot Learning Lab}
+% \descript{| Researcher}
+% \location{Jan 2014 – Jan 2015 | Ithaca, NY}
+% Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.
+% \sectionsep
+
+% \runsubsection{Cornell Phonetics Lab}
+% \descript{| Head Undergraduate Researcher}
+% \location{Mar 2012 – May 2013 | Ithaca, NY}
+% Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research.
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COMMUNITY SERVICE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Community Service}
+
+% \begin{tabular}{rll}
+% 2013 -- 2018    & Tennessee     & St. Baldrick's Foundation\\
+% 2014 -- 2017	& Tennessee     & American Cancer Society's Hope Lodge\\
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Societies}
+
+% \begin{tabular}{rll}
+% 2018 -- 2018    & National      & Association of Computing Machinery (ACM)\\
+% 2017 -- 2019	& National      & Scrum Alliance Certified ScrumMaster\\
+% 2015 -- 2019    & University    & Shackouls Honors College\\
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards}
+% \begin{tabular}{rll}
+% 2015        & 99\textsuperscript{th} percentile & National Merit Scholarship Finalist\\
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Publications}
+% \renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+% \bibliographystyle{abbrv}
+% \bibliography{publications}
+% \nocite{*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.35\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\subsection{Chitkara University}
+\descript{BE in Computer Science and Engineering}
+\location{Expected Jul 2022 | Patiala, IN}
+Chitkara Institute of Engineering and Technology \\
+% Dean's List (All Semesters) \\
+\location{ Cum. GPA: 9.89 / 10.0}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+Java \textbullet{} C/C++ 
+Dart \textbullet{} JavaScript 
+Matlab Python \\
+\sectionsep
+
+\subsection{Technology}
+Flutter \textbullet{} Git/Github \textbullet{} Firebase \textbullet{} Windows Azure \textbullet{} Automation \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Coursework}
+% \subsection{Graduate}
+% Analysis of Algorithms
+% \sectionsep
+
+% \subsection{Undergraduate}
+% Artificial Intelligence \\
+% {\footnotesize \textit{\textbf{(Teaching Assistant) }}} \\
+% AI Robotics \\
+% Operating Systems I \\
+% Calculus I-IV \\
+% Data Analysis I \\
+% Introduction to Probability \\
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards}
+\subsection{Honors}
+\begin{tabular}{rll}
+2020        & Hackathon & Hacka-demic Winner\\
+2020        & Hackathon & CodeOff Winner\\
+2020        & $\alpha$  & Microsoft Learn \\ 
+& & Student Ambassador\\
+2020        & 8\textsuperscript{th}/1500+ & GSSOC'20\\
+2019        & 5\textsuperscript{th}/150+ & JGEC JWOC'19\\
+\end{tabular}
+\sectionsep
+\subsection{Volunteering }
+\begin{tabular}{rll}
+2020        & Hackathon & HackOff 3.0 Mentor\\
+2020        & Hackathon & OctaHacks 3.0 Mentor\\
+\end{tabular}
+\sectionsep
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Societies
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Societies}
+% IEEE\\
+% Scrum Alliance Certified ScrumMaster\\
+% Shackouls Honors College\\
+% National Merit Scholarship Finalist \\
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+Github:// \href{https://github.com/himanshusharma89}{\bf himanshusharma89} \\
+LinkedIn://  \href{https://www.linkedin.com/in/himanshusharma89}{\bf in/himanshusharma89} \\
+Twitter:// @\href{https://twitter.com/_SharmaHimanshu}{\bf \_SharmaHimanshu}
+\sectionsep
+
+\end{minipage}
+\end{document}  \documentclass[]{article}
